@@ -104,68 +104,98 @@ export function HeroSection() {
                   <p className="text-gray-600">Fill out this form to receive a no-obligation offer</p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Full Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
-                      placeholder="John Smith"
-                    />
-                  </div>
+                <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  onSubmit={handleSubmit}
+  className="space-y-4"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
-                      placeholder="(360) 889-1234"
-                    />
-                  </div>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Full Name <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="text"
+      name="name"
+      required
+      onChange={handleChange}
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="John Smith"
+    />
+  </div>
 
-                  <div>
-                    <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
-                      Property Address <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      required
-                      value={formData.address}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
-                      placeholder="123 Main St, City, State"
-                    />
-                  </div>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Phone Number <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="tel"
+      name="phone"
+      required
+      onChange={handleChange}
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="(360) 889-1234"
+    />
+  </div>
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-accent-blue text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
-                  >
-                    {isSubmitting ? "Submitting..." : "Get My Cash Offer"}
-                  </button>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Property Address <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="text"
+      name="address"
+      required
+      onChange={handleChange}
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="123 Main St, City, State"
+    />
+  </div>
 
-                  <p className="text-xs text-gray-500 text-center mt-4">
-                    By submitting, you agree to receive calls and texts about your property.
-                    Your information is secure and will never be shared.
-                  </p>
-                </form>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Reason for Selling
+    </label>
+    <input
+      type="text"
+      name="reason"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="Foreclosure, Divorce, Inherited, etc."
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Timeline
+    </label>
+    <select
+      name="timeline"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+    >
+      <option value="">Select one</option>
+      <option value="ASAP">ASAP</option>
+      <option value="30 days">Within 30 Days</option>
+      <option value="60 days">Within 60 Days</option>
+      <option value="Just exploring">Just Exploring</option>
+    </select>
+  </div>
+
+  <button
+    type="submit"
+    disabled={isSubmitting}
+    className="w-full bg-accent-blue text-white font-bold py-4 rounded-lg"
+  >
+    {isSubmitting ? "Submitting..." : "Get My Cash Offer"}
+  </button>
+
+  <p className="text-xs text-gray-500 text-center mt-4">
+    By submitting, you agree to receive calls and texts about your property.
+    Your information is secure and will never be shared.
+  </p>
+</form>
               </>
             )}
           </div>
