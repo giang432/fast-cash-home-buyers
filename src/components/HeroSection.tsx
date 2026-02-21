@@ -168,7 +168,7 @@ export function HeroSection() {
   By submitting, you agree to receive calls and texts about your property.
   Your information is secure and will never be shared.
 </p>
-                  </>
+                
             )}
           </div>
         </div>
