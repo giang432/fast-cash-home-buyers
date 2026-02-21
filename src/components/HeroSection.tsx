@@ -155,47 +155,19 @@ export function HeroSection() {
     />
   </div>
 
-  <div>
-    <label className="block text-sm font-medium text-gray-700 mb-1">
-      Reason for Selling
-    </label>
-    <input
-      type="text"
-      name="reason"
-      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-      placeholder="Foreclosure, Divorce, Inherited, etc."
-    />
-  </div>
 
-  <div>
-    <label className="block text-sm font-medium text-gray-700 mb-1">
-      Timeline
-    </label>
-    <select
-      name="timeline"
-      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-    >
-      <option value="">Select one</option>
-      <option value="ASAP">ASAP</option>
-      <option value="30 days">Within 30 Days</option>
-      <option value="60 days">Within 60 Days</option>
-      <option value="Just exploring">Just Exploring</option>
-    </select>
-  </div>
+<button
+  type="submit"
+  disabled={isSubmitting}
+  className="w-full bg-accent-blue text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+>
+  {isSubmitting ? "Submitting..." : "Get My Cash Offer"}
+</button>
 
-  <button
-    type="submit"
-    disabled={isSubmitting}
-    className="w-full bg-accent-blue text-white font-bold py-4 rounded-lg"
-  >
-    {isSubmitting ? "Submitting..." : "Get My Cash Offer"}
-  </button>
-
-  <p className="text-xs text-gray-500 text-center mt-4">
-    By submitting, you agree to receive calls and texts about your property.
-    Your information is secure and will never be shared.
-  </p>
-</form>
+<p className="text-xs text-gray-500 text-center mt-4">
+  By submitting, you agree to receive calls and texts about your property.
+  Your information is secure and will never be shared.
+</p>
               </>
             )}
           </div>
