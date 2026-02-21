@@ -29,9 +29,9 @@ export function Footer() {
                 <Phone className="w-5 h-5" />
                 (360) 889-1234
               </a>
-              <a href="mailto:info@fastcashhomebuyers.com" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
+              <a href="mailto:info@fastcashhomebuyers.us" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
-                info@fastcashhomebuyers.com
+                info@fastcashhomebuyers.us
               </a>
               <div className="flex items-center gap-3 text-blue-200">
                 <MapPin className="w-5 h-5" />
