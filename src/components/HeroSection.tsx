@@ -1,29 +1,15 @@
 "use client";
 
-import { useState } from "react";
+
 import { CheckCircle, Shield, Clock, DollarSign } from "lucide-react";
 
 export function HeroSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    address: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+ 
+  
+  
 
   return (
     <section className="relative min-h-screen pt-24 md:pt-28 overflow-hidden">
@@ -104,7 +90,11 @@ export function HeroSection() {
                   <p className="text-gray-600">Fill out this form to receive a no-obligation offer</p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form
+  action="https://formspree.io/f/xvzbwelo"
+  method="POST"
+  className="space-y-4"
+>
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                       Full Name <span className="text-red-500">*</span>
@@ -114,8 +104,6 @@ export function HeroSection() {
                       id="name"
                       name="name"
                       required
-                      value={formData.name}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
                       placeholder="John Smith"
                     />
@@ -130,8 +118,6 @@ export function HeroSection() {
                       id="phone"
                       name="phone"
                       required
-                      value={formData.phone}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
                       placeholder="(360) 889-1234"
                     />
@@ -146,8 +132,6 @@ export function HeroSection() {
                       id="address"
                       name="address"
                       required
-                      value={formData.address}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
                       placeholder="123 Main St, City, State"
                     />
