@@ -169,7 +169,8 @@ export function HeroSection() {
   Your information is secure and will never be shared.
 </p>
                 
-            )}
+            </>
+)}
           </div>
         </div>
       </div>
