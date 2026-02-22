@@ -1,9 +1,12 @@
 "use client";
 
 
+import { useState } from "react";
 import { CheckCircle, Shield, Clock, DollarSign } from "lucide-react";
 
 export function HeroSection() {
+
+
   
   
 
