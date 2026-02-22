@@ -104,16 +104,7 @@ export function HeroSection() {
                   <p className="text-gray-600">Fill out this form to receive a no-obligation offer</p>
                 </div>
 
-                <form 
-  name="cash-offer"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  onSubmit={handleSubmit}
-  className="space-y-4"
->
-  <input type="hidden" name="form-name" value="cash-offer" />
-  <input type="hidden" name="bot-field" />
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                       Full Name <span className="text-red-500">*</span>
@@ -187,11 +178,6 @@ export function HeroSection() {
           <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
         </svg>
       </div>
-      <form name="cash-offer" netlify="true" hidden>
-  <input type="text" name="name" />
-  <input type="text" name="phone" />
-  <input type="text" name="address" />
-</form>
     </section>
   );
 }
