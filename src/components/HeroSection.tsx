@@ -73,87 +73,59 @@ export function HeroSection() {
 
           {/* Right Form */}
           <div id="contact" className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-md mx-auto lg:mx-0 w-full">
-            {isSubmitted ? (
-              <div className="text-center py-8">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
-                <p className="text-gray-600">
-                  We&apos;ve received your information and will contact you within 24 hours with your cash offer.
-                </p>
-              </div>
-            ) : (
-              <>
-                <div className="text-center mb-6">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Get Your Cash Offer</h2>
-                  <p className="text-gray-600">Fill out this form to receive a no-obligation offer</p>
-                </div>
-
-                <form
+           
+<form
   action="https://formspree.io/f/xvzbwelo"
   method="POST"
   className="space-y-4"
 >
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Full Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
-                      placeholder="John Smith"
-                    />
-                  </div>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Full Name <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="text"
+      name="name"
+      required
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="John Smith"
+    />
+  </div>
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
-                      placeholder="(360) 889-1234"
-                    />
-                  </div>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Phone Number <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="tel"
+      name="phone"
+      required
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="(360) 889-1234"
+    />
+  </div>
 
-                  <div>
-                    <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
-                      Property Address <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all"
-                      placeholder="123 Main St, City, State"
-                    />
-                  </div>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      Property Address <span className="text-red-500">*</span>
+    </label>
+    <input
+      type="text"
+      name="address"
+      required
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+      placeholder="123 Main St, City, State"
+    />
+  </div>
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-accent-blue text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
-                  >
-                    {isSubmitting ? "Submitting..." : "Get My Cash Offer"}
-                  </button>
-
-                  <p className="text-xs text-gray-500 text-center mt-4">
-                    By submitting, you agree to receive calls and texts about your property.
-                    Your information is secure and will never be shared.
-                  </p>
-                </form>
-              </>
-            )}
-          </div>
-        </div>
+  <button
+    type="submit"
+    className="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-all"
+  >
+    Get My Cash Offer
+  </button>
+</form>
+</div>
       </div>
 
       {/* Bottom Wave */}
