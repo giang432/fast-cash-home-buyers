@@ -84,10 +84,10 @@ export function Situations() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:(360)889-1234"
+                href="tel:(737)204-8784"
                 className="inline-flex items-center justify-center gap-2 bg-white text-primary-blue font-semibold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors"
               >
-                Call (360) 889-1234
+                Call (737) 204-8784
               </a>
               <a
                 href="#contact"
