@@ -106,7 +106,7 @@ export function HeroSection() {
                   name="phone"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  placeholder="(360) 889-1234"
+                  placeholder="(555) 123-4567"
                 />
               </div>
 
