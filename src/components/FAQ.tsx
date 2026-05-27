@@ -87,8 +87,8 @@ export function FAQ() {
           <div className="inline-flex items-center gap-3 bg-white px-6 py-4 rounded-full shadow-sm border border-gray-100">
             <MessageCircle className="w-5 h-5 text-accent-blue" />
             <span className="text-gray-600">Still have questions?</span>
-            <a href="tel:(360)889-1234" className="text-accent-blue font-semibold hover:underline">
-              Call us at (360) 889-1234
+            <a href="tel:(737)204-7874" className="text-accent-blue font-semibold hover:underline">
+              Call us at (737) 204-7874
             </a>
           </div>
         </AnimatedSection>
