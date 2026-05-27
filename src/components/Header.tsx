@@ -43,11 +43,11 @@ export function Header() {
           {/* Phone CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:(360)889-1234"
+              href="tel:(737)204-8784"
               className="flex items-center gap-2 text-primary-blue font-semibold hover:text-accent-blue transition-colors"
             >
               <Phone className="w-5 h-5" />
-              (360) 889-1234
+              (737) 204-8784
             </a>
             <Link
               href="#contact"
@@ -100,11 +100,11 @@ export function Header() {
                 FAQ
               </Link>
               <a
-                href="tel:(360)889-1234"
+                href="tel:(737)204-8784"
                 className="flex items-center gap-2 text-primary-blue font-semibold px-2 py-2"
               >
                 <Phone className="w-5 h-5" />
-                (360) 889-1234
+                (737) 204-8784
               </a>
               <Link
                 href="#contact"
