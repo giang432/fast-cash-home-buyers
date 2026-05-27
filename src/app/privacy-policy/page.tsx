@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
               <p className="mt-2">
                 <strong>Fast Cash Home Buyers</strong><br />
                 Phone: (737) 204-8784<br />
-                Email: support@fastcashhomebuyers.com
+                Email: support@fastcashhomebuyers.us
               </p>
             </section>
           </div>
