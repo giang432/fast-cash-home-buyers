@@ -25,13 +25,13 @@ export function Footer() {
               Our mission is to provide fair offers and a stress-free selling experience.
             </p>
             <div className="space-y-3">
-              <a href="tel:(360)889-1234" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
+              <a href="tel:(737)204-8784" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
                 <Phone className="w-5 h-5" />
-                (360) 889-1234
+                (737) 204-8784
               </a>
-              <a href="mailto:info@fastcashhomebuyers.us" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
+              <a href="mailto:support@fastcashhomebuyers.us" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
-                info@fastcashhomebuyers.us
+                support@fastcashhomebuyers.us
               </a>
               <div className="flex items-center gap-3 text-blue-200">
                 <MapPin className="w-5 h-5" />
