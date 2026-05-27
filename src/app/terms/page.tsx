@@ -65,8 +65,8 @@ export default function Terms() {
               </p>
               <p className="mt-2">
                 <strong>Fast Cash Home Buyers</strong><br />
-                Phone: (360) 889-1234<br />
-                Email: info@fastcashhomebuyers.com
+                Phone: (737) 204-8484<br />
+                Email: support@fastcashhomebuyers.us
               </p>
             </section>
           </div>
